@@ -20,11 +20,22 @@ operatorButtons.forEach(button => {
 
         if (currentNum !== "") {
             const num = Number(currentNum);
-            existingNum = (existingNum !== null && operator) ? calculate(existingNum, num, operator) : num;
+
+            if (existingNum !== null && operator) {
+                existingNum = calculate(existingNum, num, operator);
+            } else {
+                existingNum = num;
+            }
+
             currentNum = "";
         }
 
-        operator = (op === "=") ? null : op;
+        if (op === "=") {
+            operator = null;
+        } else {
+            operator = op;
+        }
+        
         if (existingNum !== null) screen.value = existingNum;
     });
 });
