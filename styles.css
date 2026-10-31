@@ -21,6 +21,7 @@ div.screen {
 input.screen {
     width: 100%;
     padding: 1rem;
+    font-size: xx-large;
     border: 5px inset;
     border-radius: 5px;
 }
@@ -31,8 +32,9 @@ div.buttons {
 }
 
 button {
-    padding: .5rem;
+    padding: 1rem .5rem;
     margin: .5rem;
+    font-size: larger;
     border: 2.5px outset;
     border-radius: 5px;
 }
