@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2rem;
+}
+
+div.chassis { 
+    width: 100%;
+    padding: 2rem .5rem .5rem .5rem;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+div.screen {
+    margin-bottom: 1rem;
+}
+
+input.screen {
+    width: 100%;
+    padding: 1rem;
+    border: 5px inset;
+    border-radius: 5px;
+}
+
+div.buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+button {
+    padding: .5rem;
+    margin: .5rem;
+    border: 2.5px outset;
+    border-radius: 5px;
+}
+
+button.operator {
+    background-color: gray;
+    color: white;
+}
+
+button.clear {
+    background-color: rgb(145, 0, 0);
+    color: white;
+}
