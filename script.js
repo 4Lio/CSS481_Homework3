@@ -3,9 +3,9 @@ const operatorButtons = document.querySelectorAll("button.operator");
 const clearButton = document.querySelector("button.clear");
 const screen = document.querySelector("input");
 
-let currentNum = "";      // digits being typed
-let existingNum = null;     // left operand / running result
-let operator = null;  // "+", "-", "x", "/"
+let currentNum = "";
+let existingNum = null;
+let operator = null;
 
 numButtons.forEach(button => {
     button.addEventListener("click", event => {
